@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuegoAbecedario</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/grid.css">
+</head>
+<body>
+    <header class="header">
+        <h5>Bienvenido<br> escribe correctamente la letra que se presenta</h5>
+    </header>
+    <div class="container">
+        <div class="container-ingreso">
+            
+                <input type="text" id="input" class="input" maxlength="1">      
+                <button onclick="mostrar()" class="btn" id="botn">Pulsar</button>
+        </div>
+        <div class="mensaje">
+            <div class="ganaste" ><h4>Bien</h4></div>
+            <div class="finish"><h4>Felicitaciones ,no olvides repasar</h4></div>
+            <div class="perdiste"><h4>Vuelve a intentarlo</h4></div>
+        </div>
+        <div class="container-salida">
+            
+            <h2 id="letra"></h2>
+            
+        </div>
+    </div>
+    <audio id="sonidoP" src="audios/sonidopierde.mp3" controls="controls"></audio>
+    <audio id="sonidoG" src="audios/ganaste.wav" controls="controls"></audio>
+    <audio id="sonidoF" src="audios/melodiarepeat.mp3" controls="controls"></audio>
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" > </script> 
+    <script src="js/gsap.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>

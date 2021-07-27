@@ -1,0 +1,150 @@
+:root{
+    --font-tamaño: 29px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image:url(../img/Memariani.jpg);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+.header{
+    width: 80%;
+    height: 90px;
+    margin: 0 auto;
+    text-align: center;
+    font-size:30px;
+    background:linear-gradient( to left, rgb(64, 27, 151), rgb(163, 70, 34));
+    color: rgb(178, 196, 181);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 200px;
+}
+.container{
+    height:500px;
+    display: block
+}
+.container-salida{
+    margin-bottom: 20px;
+}
+
+.container-salida , .container-ingreso{
+    
+    display: flex;
+    justify-content:center;
+    text-align:center;
+    flex-flow: column nowrap;
+    
+}
+.input{
+    width: 120px;
+    height:70px;
+    border-radius: 100%;
+    font-size:35px;
+    color: white;
+    background:linear-gradient(to left ,rgb(15, 43, 168), rgb(212, 22, 22));
+    margin: 10px auto ;
+    text-align: center;
+    border:solid 2px rgb(0, 0, 0);
+    outline: none;
+}
+.btn{
+    width: 70px;
+    margin: 10px auto;
+    height: 30px;
+    background-color:navy;
+    color: white;
+    font-size: 20px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+.btn:hover{
+    scale:0.9;
+}
+.mensaje{
+    display:block;
+    text-align:center;
+    
+}
+.ganaste{
+    font-size: var(--font-tamaño);
+    color: rgb(255, 251, 0);
+    text-shadow: 5px 4px 9px rgb(25, 67, 204);
+    display: none;
+}
+.perdiste{
+    
+    font-size: var(--font-tamaño);
+    color: #000;
+    text-shadow: 2px 2px 2px red;
+    display: none;
+}
+#letra{
+    font-size: 100px;
+    color:rgba(0, 0, 255, 0.747);
+    
+    background-color:rgb(153, 28, 28);
+    border-radius:100%;
+    border:2px solid black; 
+    
+    
+}
+.finish{
+    display: none;
+    font-size: var(--font-tamaño);
+    color: rgb(30, 10, 209);
+    text-shadow: 5px 4px 9px ;
+    display: none;
+}
+
+@media only screen and (min-width:720px){
+    .header{
+        font-size: 40px;
+    }
+    #letra{
+        font-size: 140px;
+        margin: auto;
+        width:300px;
+        
+    }
+    .perdiste,.ganaste, .finish{
+    
+        font-size: 30px;
+    }
+    
+    .input{
+        width:220px;
+        height: 120px ;
+    }
+    .btn{
+        width: 130px;
+        height: 80px
+    }
+}
+@media only screen and (min-width:1080px){
+    .header{
+        font-size: 45px;
+    }
+    #letra{
+        font-size: 170px;
+        margin: auto;
+        width:300px;
+        
+    }
+    .perdiste,.ganaste, .finish{
+        font-size: 40px;
+    }
+    .input{
+        width:220px;
+        height: 120px ;
+    }
+    .btn{
+        width: 130px;
+        height: 80px
+    }
+}
